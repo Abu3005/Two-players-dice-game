@@ -4,6 +4,15 @@
 .new-game{
     padding-top: 20px;
 }
+
+section {
+    width: 600px;
+    height: 300px;
+    margin: 50px 50px;
+    border: 1px solid rgb(224, 104, 104);
+    background: linear-gradient(90deg, rgb(179, 174, 174) 50%, white 50%);
+    text-align:center;
+}
 #flex {
     display: flex;
     flex-direction: row;
@@ -11,14 +20,10 @@
     margin-bottom: 25px;
 
 }
-section {
-    width: 600px;
-    height: 300px;
-    margin: 50px 50px;
-    border: 1px solid black;
-    background: linear-gradient(90deg, rgb(179, 174, 174) 50%, white 50%);
-    text-align:center;
+.flex h1 {
+    color: rgb(224, 104, 104);
 }
+
 #roll-hold {
     display: flex;
     flex-direction: column;
@@ -26,16 +31,67 @@ section {
 }
 .divCurrent {
     background-color: rgb(224, 104, 104);
-    height: 75px;
-    width: 80px;
+    height: 73px;
+    width: 85px;
     
 }
-#image {
-    background-image: url(./images/dice1.png);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#currentScore1, #currentScore2  {
+    color: white;
 }
-
+#image1 {
+    background: url(./images/dice1.png);
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    object-fit:contain;
+    border: 1px solid red;
+    background-size: cover;
+}
+#image2 {
+    background: url(./images/dice2.png);
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    object-fit:contain;
+    border: 1px solid red;
+    background-size: cover;
+}
+#image3 {
+    background: url(./images/dice3.png);
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    object-fit:contain;
+    border: 1px solid red;
+    background-size: cover;
+}
+#image4 {
+    background: url(./images/dice4.png);
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    object-fit:contain;
+    border: 1px solid red;
+    background-size: cover;
+}
+#image5 {
+    background: url(./images/dice5.png);
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    object-fit:contain;
+    border: 1px solid red;
+    background-size: cover;
+}
+.dot {
+    background-color: brown;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.player1, .player2 {
+    display: flex;
+    flex-direction: row;
+}

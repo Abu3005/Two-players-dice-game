@@ -1,4 +1,4 @@
-# :couple: Two players game :couple:
+# :couple: Two players game
 
 ### :guitar: Rules of the game
 - Two players game, playing in rounds.
