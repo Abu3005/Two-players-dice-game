@@ -38,51 +38,14 @@ section {
 #currentScore1, #currentScore2  {
     color: white;
 }
-#image1 {
-    background: url(./images/dice1.png);
+#image {
     position: absolute;
     height: 55px;
     width: 55px;
     object-fit:contain;
-    border: 1px solid red;
     background-size: cover;
 }
-#image2 {
-    background: url(./images/dice2.png);
-    position: absolute;
-    height: 55px;
-    width: 55px;
-    object-fit:contain;
-    border: 1px solid red;
-    background-size: cover;
-}
-#image3 {
-    background: url(./images/dice3.png);
-    position: absolute;
-    height: 55px;
-    width: 55px;
-    object-fit:contain;
-    border: 1px solid red;
-    background-size: cover;
-}
-#image4 {
-    background: url(./images/dice4.png);
-    position: absolute;
-    height: 55px;
-    width: 55px;
-    object-fit:contain;
-    border: 1px solid red;
-    background-size: cover;
-}
-#image5 {
-    background: url(./images/dice5.png);
-    position: absolute;
-    height: 55px;
-    width: 55px;
-    object-fit:contain;
-    border: 1px solid red;
-    background-size: cover;
-}
+
 .dot {
     background-color: brown;
     height: 10px;
