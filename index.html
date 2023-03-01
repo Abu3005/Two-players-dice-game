@@ -4,43 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Two player's game</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <section>
-        <div class="new-game">
+        <div id="new">
             <botton>NEW GAME</botton>
         </div>
         <div id="div-1">
             <div id="flex">
-                <h3 class="player1">PLAYER 1<span id="dot1"></span></h3>
-                <h3 class="player2">PLAYER 2<span id="dot2"></span></h3>
+                <h3 class="player0">PLAYER 1<span id="dot0"></span></h3>
+                <h3 class="player1">PLAYER 2<span id="dot1"></span></h4>
             </div>
-            <div id="flex" class="flex">
-                <h1 class="score1">43</h1>
+            <div id="flex" class="score">
+                <h1 class="score0">9</h1>
                 <img id="image" />
-                <h1 class="score2">72</h1>
+                <h1 class="score1">78</h1>
             </div>
         </div>
-        <div id="flex">
-            <div class="currentScore-1 divCurrent">
+        <div id="flex" class="divk">
+            <div class="currentScore-0 divCurrent">
                 <p>current</p>
-                <p id="currentScore1">11</p>
+                <p id="currentScore0">90</p>
             </div>
             <div id="roll-hold">
-                <botton class="rollDice">ROLL DICE</botton>
-                <botton class="hold">HOLD</botton>
+                <botton class="rollDice"><i class="fa-solid fa-volleyball"></i>ROLL DICE</botton>
+                <botton class="hold"><i class="fa-regular fa-circle-pause"></i>HOLD</botton>
             </div>
-            <div class="currentScore-2 divCurrent">
+            <div class="currentScore-1 divCurrent">
                 <p>current</p>
-                <p id="currentScore2">4</p>
+                <p id="currentScore1">45</p>
             </div>
         </div>
     
     </section>
-
-
 
     <script src="script.js"></script>
 </body>

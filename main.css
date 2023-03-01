@@ -1,15 +1,21 @@
-/*.h-p {
-  margin-right: 85px;
-}*/
-.new-game{
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: auto auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#new {
     padding-top: 20px;
 }
 
 section {
-    width: 600px;
-    height: 300px;
+    width: 700px;
+    height: 350px;
     margin: 50px 50px;
-    border: 1px solid rgb(224, 104, 104);
+    border: 5px solid rgb(224, 104, 104);
+    border-radius: 20%;
     background: linear-gradient(90deg, rgb(179, 174, 174) 50%, white 50%);
     text-align:center;
 }
@@ -17,8 +23,14 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
+}
+.score0 {
+    padding-right : 245px;
+}
+.player0 {
+    margin-right : 245px;
 }
 .flex h1 {
     color: rgb(224, 104, 104);
@@ -35,7 +47,7 @@ section {
     width: 85px;
     
 }
-#currentScore1, #currentScore2  {
+#currentScore0, #currentScore1  {
     color: white;
 }
 #image {
@@ -44,6 +56,9 @@ section {
     width: 55px;
     object-fit:contain;
     background-size: cover;
+}
+.score0, .score1 {
+    font-family:'Courier New', Courier, monospace;
 }
 
 .dot {
@@ -54,7 +69,21 @@ section {
     margin-left: 10px;
     margin-top: 5px;
 }
-.player1, .player2 {
+.player0, .player1 {
     display: flex;
     flex-direction: row;
+    
+}
+.winner {
+    font-weight: 900px;
+    color: rgb(224, 104, 104);
+    font-size: 30px;
+    
+}
+.divCurrent {
+    border-radius: 20%;
+}
+i {
+    padding-right: 5px;
+    color:green
 }
