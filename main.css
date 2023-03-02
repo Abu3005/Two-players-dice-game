@@ -29,7 +29,7 @@ section {
 .score0 {
     padding-right : 245px;
 }
-.player0 {
+#player0 {
     margin-right : 245px;
 }
 .flex h1 {
@@ -69,7 +69,8 @@ section {
     margin-left: 10px;
     margin-top: 5px;
 }
-.player0, .player1 {
+
+#player0, #player1 {
     display: flex;
     flex-direction: row;
     
