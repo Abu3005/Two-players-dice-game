@@ -1,68 +1,41 @@
-var score, current, dice, active, newGame;
-init()
+"use strict"
+//   make dice
+// role a dice
+   // if roll > 1
+         // start adding the dice current
+         //  update current score
+   // else 
+         // next player
+         // if roll > 1
+         //  update current score
+             // start adding the dice current
 
-document.querySelector('.rollDice').addEventListener("click", function() {
-    if (newGame) {
-        dice = Math.floor(Math.random()* 6) + 1;
-        img.src = "./images/dice" + dice + ".png";
-        img.style.display = "block";
-        if (dice !== 1) {
-            //document.querySelector('#dot' + active).classList.add('dot');
-            current += dice;
-            document.querySelector('#currentScore' + active).textContent = current;
-        } else next();
-    }
-    
+var player1, player2, current2, current1, dice, roll, hold, score1, score2, img, game;
 
-});
-document.querySelector('.hold').addEventListener("click", function() {
-    if (newGame) {
-        score[active] += current;
-        document.querySelector('.score' + active).textContent = score[active];
-     
-        if (score[active] >= 10) {
-            document.querySelector("#player" + active).classList.add('winner');
-            //document.querySelector('#dot' + active).classList.remove('dot');
-            document.querySelector('#player' + active).textContent = "Winner !"    
-            newGame = false;
-        } else next();
-    }
-    
+score1 = 0;
+
+roll = document.querySelector(".roll");
+hold = document.querySelector(".hold");
+game = document.querySelector(".newgame");
+img = document.querySelector(".img-0");
+
+player1 = document.querySelector(".player-1");
+player2 = document.querySelector(".player-2");
+current1 = document.querySelector(".current1");
+current2 = document.querySelector(".current2");
+roll.addEventListener("click", function() {
+   dice = Math.floor(Math.random() * 6) + 1;
+   img.src = "./images/dice" + dice + ".png";
+   score1 += dice;
+   document.querySelector(".current1").textContent = score1;
+   if (dice === 1) {
+      score2 += dice;
+      document.querySelector(".current2").textContent = score2;
+      //  next player
+   }
 })
 
-function next() {
-    active === 1 ? active = 0 : active = 1;  
-    current = 0;
-
-    //document.querySelector('#dot0').classList.toggle('dot');
-    //document.querySelector('#dot1').classList.toggle('dot'); 
-        
-    document.querySelector('#currentScore0').textContent = "0";     
-    document.querySelector('#currentScore1').textContent = "0";
-    img.style.display = "none";
-}
 
 
 
-document.querySelector('#new').addEventListener('click', init);
-function init() {
-    active = 0;
-    current = 0;
-    score = [0, 0];
-    newGame = true;
-    img = document.querySelector('#image');
-    img.style.display = "none";
-    document.querySelector('.score0').textContent = "0";
-    document.querySelector('.score1').textContent = "0";
-    document.getElementById('currentScore0').textContent = "0";
-    document.getElementById('currentScore1').textContent = "0";
-    document.getElementById('player0').textContent = "PLAYER 1"
-    document.getElementById('player1').textContent = "PLAYER 2"
-    document.getElementById("player0").classList.remove('winner');
-    document.getElementById("player1").classList.remove('winner');
-    //document.getElementById('dot0').classList.remove('dot');
-    //document.getElementById('dot1').classList.remove('dot');
-    //document.getElementById('dot0').classList.add('dot');
-    
-}
-    
+
