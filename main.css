@@ -21,10 +21,17 @@ body {
     padding: 1rem;
     background-color: rgb(13, 13, 32);
    
+
+}
+.player-1, .player-2, .dice {
+    text-align: center;
+    width: 9rem;
 }
 
-
-
+img {
+    display: block;
+    margin: auto;
+}
 
 
 
@@ -175,7 +182,6 @@ li a:active {
 }
 .total-dice {
     display: flex;
-    gap:3rem;
     justify-content: space-evenly;
     align-items: center;
     font-size: 5rem;
@@ -186,9 +192,7 @@ li a:active {
     width: 4rem;
 }
 
-.dice {
-    width: 5rem;
-}
+
 
 .flex-row-3 {
     display: flex;
