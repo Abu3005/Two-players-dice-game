@@ -27,21 +27,29 @@
             <li>
                 Each turn, a player roll a die as many time as he/she wishes. Each result added to his/her round score (current).
             </li>
-            <li>But if the player roll is 1, all his/her ROUND score get lost. After that, it is the next player's turn.
+            <li>
+                The active player has background color &rarr; <div class="act"></div>
             </li>
             <li>
-                The player can choose to "hold", which means that his/her ROUND score get added to his/her global score. After that, it is the next player's turn.
+                The winning player background color changes to &rarr; <div class="winner"></div>
+            </li>
+            
+            <li>if a player roll is 1, his/her current score get lost. After that, it is the next player's turn.
             </li>
             <li>
-                The first player to reach 50 points on the global score is the winner.
+                A wise player press "hold" when he/she has high current score, which will check if the total score of any of the players has reached 100. If none, the present player current score will be added to his/her global score. After that, it is the next player's turn.
             </li>
             <li>
-                Lastly, You can cancel the present game by clicking new game button.
+                The first player to reach 100 points on the global score is the winner.
             </li>
+            <li>
+                Lastly, You can cancel the present game by clicking new game button but both players will loose their scores.
+            </li>
+
         </ul>
     </div>
     <section id="main">
-        <div class="game">
+        <div class="game color2 win">
             <div class="flexi">
                 <button class="new-game flex-row-2">
                     <i class="fa-solid fa-circle-notch"></i>
@@ -57,7 +65,10 @@
     
             <div class="total-dice">
                 <p class="player-1">0</p>
-                <img class="img-0" src="./images/dice3.png" alt="dice-1">
+                <div class="dice">
+                    <img class="img-0" src="./images/dice3.png" alt="dice-1">
+                </div>
+                
                 <p class="player-2">0</p>
             </div>
     
